@@ -25,8 +25,9 @@ class CharacterIterator extends AbstractIterator<Character>{
   */
   public Character next() {
     Assert.pre(hasNext(), "Running next without next element.");
+    char r = get();
     temp_index++;
-    return chararr[temp_index-1];
+    return r;
   }
   /**
   * Determines whether there is a next element to grab
