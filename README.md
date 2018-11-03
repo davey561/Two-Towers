@@ -7,7 +7,7 @@
  * [GitHub markdown](https://guides.github.com/features/mastering-markdown/) syntax
 
  1. What is the best solution to the 15-block problem?
-   * (answer)
+   * {1, 2, 3, 4, 6, 7, 11, 14}
  2. How long does it take your program to find the answer to the 20-block
  problem? Based on the time taken to solve the 20-block problem, about how long
  do you expect it would take to solve the 21-block problem? What is the actual
@@ -20,7 +20,7 @@
 
  | Problem Size  | Estimated time | Actual Time |
  | :------------ | :------------: | :---------: |
- | 20 blocks     |       1 second(just under)       |  (answer)   |
+ | 20 blocks     |       --       |  (answer)   |
  | 21 blocks     |    (answer)    |  (answer)   |
  | 22 blocks     |    (answer)    |  (answer)   |
  | 25 blocks     |    (answer)    |  (answer)   |
