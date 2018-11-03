@@ -38,10 +38,12 @@ public class SubsetIterator<E> extends AbstractIterator<Vector<E>>{
     return combo<Math.pow(2, set.size());
   }
   /**
+  * pre: hasNext()
   * post: increments to next set
   * @return the current subset, prior to incrementation
   */
   public Vector<E> next(){
+    Assert.pre(hasNext(), "called next() when iterator does not hasNext()");
     Vector<E> current = get();
     combo++;
     return current;
@@ -67,6 +69,7 @@ public class SubsetIterator<E> extends AbstractIterator<Vector<E>>{
   public String toString(){
     return ("Total set: " + set.toString() + ", current subset: " + get());
   }
+  
   /**
   * Main method, used for debugging
   * @param args unnecessary, irrelevant
@@ -77,7 +80,7 @@ public class SubsetIterator<E> extends AbstractIterator<Vector<E>>{
     SubsetIterator<Integer> it = new SubsetIterator<Integer>(vec);
     System.out.println(it.toString());
     System.out.println(it.hasNext());
-    for (int i = 0; i<Math.pow(2, vec.size()); i++) {
+    while(it.hasNext()){
       System.out.println(it.next());
     }
   }

@@ -61,6 +61,7 @@ public class TwoTowers{
       min_difference = second_min_difference = total_sum/2-0; //the minimum difference between the height of the stack and the ideal height (total divided by 2) begins as largest possible value: total/2
       //while there is another element in the subset
       while(subsetIt.hasNext()){
+        temp_subset = subsetIt.next(); //increment to look at next subset
         temp_sum = 0; //before calculations, height starts at zero
         //Calculate the height of the subset
         for(int i = 0; i<temp_subset.size(); i++){
@@ -73,7 +74,6 @@ public class TwoTowers{
           second_best_subset = best_subset; //old best subset is now second best subset
           best_subset = temp_subset; //record this as new best subset
         }
-        temp_subset = subsetIt.next(); //increment to look at next subset
       }
       System.out.println(
         "Height of the best stacking: " + (total_sum/2-min_difference) +
