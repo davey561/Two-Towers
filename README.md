@@ -43,4 +43,4 @@
  time, printing the best subset found). How would you implement `randomSubset`, a
  new `SubsetIterator` method that returns a random subset? (Describe your
  strategy. You do not need to actually implement it.)
-   * I would still use the a long variable as a representation of the subset of my choice. But, instead of incrementing that variable to cover every possible subset, I would just randomly generate ones and zeros for each digit of the binary representation. 
+   * I would still use a long variable to represent the temporary subset. But, instead of incrementing that variable to cover every possible subset, I would just randomly generate its value, between 0 and 2^63. But, if there is no easy way to generate a random long, I could instead generate one or two random ints, each between 0 and 2^31. to represent 62 binary digits at most. I would then read the ones and zeroes in the same manner as in TwoTowers.java.
