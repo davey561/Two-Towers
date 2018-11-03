@@ -20,7 +20,7 @@
 
  | Problem Size  | Estimated time | Actual Time |
  | :------------ | :------------: | :---------: |
- | 20 blocks     |       --       |  (answer)   |
+ | 20 blocks     |       1 second(just under)       |  (answer)   |
  | 21 blocks     |    (answer)    |  (answer)   |
  | 22 blocks     |    (answer)    |  (answer)   |
  | 25 blocks     |    (answer)    |  (answer)   |
