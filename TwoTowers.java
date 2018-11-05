@@ -50,7 +50,7 @@ public class TwoTowers{
     //Insert consecutive square roots into the set vector, and calculate total sum in process.
       //for each integer up to num_blocks
       for(int i = 0; i<num_blocks; i++){
-        total_sum += Math.sqrt(i); //add the sqrt to the total sum
+        total_sum += Math.sqrt(i+1); //add the sqrt to the total sum
         set.add(Math.sqrt(i)); //tack on the sqrt to the end of the set
       }
       //Print out total set of blocks
@@ -94,7 +94,11 @@ public class TwoTowers{
     for(int i = 0; i<set.size(); i++){
       result += Math.round(Math.pow(set.get(i), 2)) + ", ";
     }
-    result = result.substring(0,result.length()-2); //account for extra comma
+    //if the result string has characters (ie if there were more than 1 block)
+    if(result.length()>1){
+      result = result.substring(0,result.length()-2);
+    }
+     //account for extra comma
     result+= "}";
     return result;
   }

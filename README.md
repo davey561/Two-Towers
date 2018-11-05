@@ -1,5 +1,5 @@
 # Lab 7: The Two Towers
-
+I am sole author.
 ## Useful Links
  * [Course Homepage](http://cs.williams.edu/~cs136/index.html) (with TA schedule)
  * [Lab Webpage](http://cs.williams.edu/~cs136/labs/two-towers.pdf)
@@ -7,7 +7,9 @@
  * [GitHub markdown](https://guides.github.com/features/mastering-markdown/) syntax
 
  1. What is the best solution to the 15-block problem?
-   * {1, 2, 3, 4, 6, 7, 11, 14}
+   * Perfect stacking height (half of the total height): 20.234598300071305
+   * Height of the best stacking: 20.23411306140849
+   * Blocks in the best stacking: {4, 5, 6, 10, 11, 12, 13}
  2. How long does it take your program to find the answer to the 20-block
  problem? Based on the time taken to solve the 20-block problem, about how long
  do you expect it would take to solve the 21-block problem? What is the actual
@@ -43,4 +45,4 @@
  time, printing the best subset found). How would you implement `randomSubset`, a
  new `SubsetIterator` method that returns a random subset? (Describe your
  strategy. You do not need to actually implement it.)
-   * I would still use a long variable to represent the temporary subset. But, instead of incrementing that variable to cover every possible subset, I would just randomly generate its value, between 0 and 2^63. But, if there is no easy way to generate a random long, I could instead generate one or two random ints, each between 0 and 2^31. to represent 62 binary digits at most. I would then read the ones and zeroes in the same manner as in TwoTowers.java.
+   * I would still use a long variable to represent the temporary subset. But, instead of incrementing that variable to cover every possible subset, I would just randomly generate its value, between 0 and 2^63. But, if there is no easy way to generate a random long, I could instead generate one or two random ints, each between 0 and 2^31. to represent 62 binary digits at most. I would then read the ones and zeroes in the same manner as in TwoTowers.java, where they correspond to whether certain elements of the total set are included in the subset in question or not.
