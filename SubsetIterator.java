@@ -19,6 +19,7 @@ public class SubsetIterator<E> extends AbstractIterator<Vector<E>>{
   */
   public SubsetIterator(Vector<E> set){
     super();
+    //$Nice use of Asserts to catch an edge case!
     Assert.pre(set.size()<63, "Vector has more than 62 elements--long instance variable cannot handle it.");
     this.set = set;
     combo = 1;
@@ -44,6 +45,7 @@ public class SubsetIterator<E> extends AbstractIterator<Vector<E>>{
   */
   public Vector<E> next(){
     Assert.pre(hasNext(), "called next() when iterator does not hasNext()");
+    //$Nice work only writing this code once!
     Vector<E> current = get();
     combo++;
     return current;
@@ -69,7 +71,7 @@ public class SubsetIterator<E> extends AbstractIterator<Vector<E>>{
   public String toString(){
     return ("Total set: " + set.toString() + ", current subset: " + get());
   }
-  
+
   /**
   * Main method, used for debugging
   * @param args unnecessary, irrelevant

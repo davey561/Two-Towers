@@ -1,3 +1,5 @@
+//$ 👍
+
 /** Iterates through String, character by Character
 * @author Davey
 * pre,post comments for each function are copy and pasted from Java Structures Bailey Textbook

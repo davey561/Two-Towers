@@ -28,7 +28,7 @@ public class TwoTowers{
     Vector <Double> best_subset = new Vector<Double>(); //keeps track of the best subset
     Vector <Double> second_best_subset = new Vector<Double>(); //keeps track of the best subset encountered thus far, i.e. the subset whose sum is closest to half of the total sum of consecutive square roots
 
-
+    //$ This is good!
     //Parse the user-given input as an integer.
       //Make sure that number input is a parseable int.
       try {
